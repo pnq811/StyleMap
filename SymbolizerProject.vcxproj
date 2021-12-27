@@ -1,0 +1,415 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <ProjectGuid>{5428D150-D7B5-4673-8B51-F7184D3FA963}</ProjectGuid>
+    <RootNamespace>SymbolizerProject</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.19041.0</WindowsTargetPlatformVersion>
+    <Keyword>MFCProj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>E:\packages\vcpkg\packages\tinyxml2_x86-windows\include;E:\packages\vcpkg\packages\sqlite3_x86-windows\include;C:\Program Files (x86)\BCGSoft\BCGControlBarPro\Bin;E:\packages\vcpkg\installed\x86-windows\include;E:\packages\vcpkg\packages\libosmium_x86-windows\include</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0409</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;_WINDOWS;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>
+      </AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>
+      </AdditionalDependencies>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0409</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <MinimalRebuild>false</MinimalRebuild>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0409</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <MinimalRebuild>false</MinimalRebuild>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <PreprocessorDefinitions>_WINDOWS;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0409</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\..\..\..\packages\vcpkg\packages\tinyxml2_x64-windows\include\tinyxml2.h" />
+    <ClInclude Include="BmpMem.h" />
+    <ClInclude Include="Building\Building.h" />
+    <ClInclude Include="Building\Edge.h" />
+    <ClInclude Include="Building\Node.h" />
+    <ClInclude Include="CDialogProgress.h" />
+    <ClInclude Include="ChildFrm.h" />
+    <ClInclude Include="ClassView.h" />
+    <ClInclude Include="ConvertProj.h" />
+    <ClInclude Include="CTileZoom.h" />
+    <ClInclude Include="CTree_File.h" />
+    <ClInclude Include="CustomToolTipCtrl.h" />
+    <ClInclude Include="CustomPolygonPatternToolTipCtrl.h" />
+    <ClInclude Include="Datasources_Ogr.h" />
+    <ClInclude Include="Datasources_Osm.h" />
+    <ClInclude Include="Datasources_Postgis.h" />
+    <ClInclude Include="Datasources_Python.h" />
+    <ClInclude Include="DlgStyleFloor.h" />
+    <ClInclude Include="FileView.h" />
+    <ClInclude Include="FootPrint.h" />
+    <ClInclude Include="FormViewDataSourceCSV.h" />
+    <ClInclude Include="FormViewDataSourceGDAL.h" />
+    <ClInclude Include="FormViewDataSourceGEOJSON.h" />
+    <ClInclude Include="FormViewDataSourceOCCI.h" />
+    <ClInclude Include="FormViewMarkerSymbolizer.h" />
+    <ClInclude Include="FormViewPolygonPatternSymbolizer.h" />
+    <ClInclude Include="FormViewPolygonSymbolizer.h" />
+    <ClInclude Include="GE\Affine2D.h" />
+    <ClInclude Include="GE\AStack.h" />
+    <ClInclude Include="GE\Basics.h" />
+    <ClInclude Include="GE\Define.h" />
+    <ClInclude Include="GE\pch.h" />
+    <ClInclude Include="GE\Point2D.h" />
+    <ClInclude Include="GE\Rect2D.h" />
+    <ClInclude Include="GE\RTree.h" />
+    <ClInclude Include="GE\Transform2D.h" />
+    <ClInclude Include="GE\Vector2D.h" />
+    <ClInclude Include="lru_cache.h" />
+    <ClInclude Include="MainFrm.h" />
+    <ClInclude Include="MarkerSymbolizer.h" />
+    <ClInclude Include="myComparator.h" />
+    <ClInclude Include="OutputBar.h" />
+    <ClInclude Include="OutputWnd.h" />
+    <ClInclude Include="PaneDataSourceCSV.h" />
+    <ClInclude Include="PaneDataSourceGDAL.h" />
+    <ClInclude Include="PaneDataSourceGEOJSON.h" />
+    <ClInclude Include="PaneDataSourceOCCI.h" />
+    <ClInclude Include="pch.h" />
+    <ClInclude Include="PolygonPatternSymbolizer.h" />
+    <ClInclude Include="PolygonSymbolizer.h" />
+    <ClInclude Include="PropertiesViewBar.h" />
+    <ClInclude Include="PropertiesWnd.h" />
+    <ClInclude Include="Relations.h" />
+    <ClInclude Include="Relation\CHeight.h" />
+    <ClInclude Include="Relation\CWeight.h" />
+    <ClInclude Include="Relation\CWidth.h" />
+    <ClInclude Include="Relation\IConstraint.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="StringProcess.h" />
+    <ClInclude Include="SymbolizerProject.h" />
+    <ClInclude Include="SymbolizerProjectDoc.h" />
+    <ClInclude Include="SymbolizerProjectView.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="Symbolizer\S_Marker.h" />
+    <ClInclude Include="Symbolizer_Dot.h" />
+    <ClInclude Include="Symbolizer_Line.h" />
+    <ClInclude Include="Symbolizer_Linepattern.h" />
+    <ClInclude Include="Symbolizer_Point.h" />
+    <ClInclude Include="Symbolizer_Raster.h" />
+    <ClInclude Include="TabCtrlMarker.h" />
+    <ClInclude Include="Tabctrl_Postgis.h" />
+    <ClInclude Include="TabMarker1.h" />
+    <ClInclude Include="TabMarker2.h" />
+    <ClInclude Include="TabMarker3.h" />
+    <ClInclude Include="Tab_one_Postgis.h" />
+    <ClInclude Include="Tab_two_Postgis.h" />
+    <ClInclude Include="ThreadPool.h" />
+    <ClInclude Include="threadpool.hpp" />
+    <ClInclude Include="threadtest.hpp" />
+    <ClInclude Include="TileComparator.h" />
+    <ClInclude Include="TileSystem.h" />
+    <ClInclude Include="TransformActions.h" />
+    <ClInclude Include="TransformManager.h" />
+    <ClInclude Include="UserAction.h" />
+    <ClInclude Include="ViewTree.h" />
+    <ClInclude Include="WorkSpaceBar.h" />
+    <ClInclude Include="WorkSpaceBar2.h" />
+    <ClInclude Include="ToolBox.h" />
+    <ClInclude Include="WorkSpaceBar_Dot.h" />
+    <ClInclude Include="WorkSpaceBar_Line.h" />
+    <ClInclude Include="WorkSpaceBar_Linepattern.h" />
+    <ClInclude Include="WorkSpaceBar_Ogr.h" />
+    <ClInclude Include="WorkSpaceBar_Osm.h" />
+    <ClInclude Include="WorkSpaceBar_Point.h" />
+    <ClInclude Include="WorkSpaceBar_Postgis.h" />
+    <ClInclude Include="WorkSpaceBar_Python.h" />
+    <ClInclude Include="WorkSpaceBar_Raster.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="BmpMem.cpp" />
+    <ClCompile Include="Building\Building.cpp" />
+    <ClCompile Include="Building\Edge.cpp" />
+    <ClCompile Include="Building\Node.cpp" />
+    <ClCompile Include="CDialogProgress.cpp" />
+    <ClCompile Include="ClassView.cpp" />
+    <ClCompile Include="ConvertProj.cpp" />
+    <ClCompile Include="CTileZoom.cpp" />
+    <ClCompile Include="CTree_File.cpp" />
+    <ClCompile Include="Datasources_Ogr.cpp" />
+    <ClCompile Include="Datasources_Osm.cpp" />
+    <ClCompile Include="Datasources_Postgis.cpp" />
+    <ClCompile Include="Datasources_Python.cpp" />
+    <ClCompile Include="DlgStyleFloor.cpp" />
+    <ClCompile Include="FileView.cpp" />
+    <ClCompile Include="FootPrint.cpp" />
+    <ClCompile Include="myComparator.cpp" />
+    <ClCompile Include="OutputWnd.cpp" />
+    <ClCompile Include="PropertiesWnd.cpp" />
+    <ClCompile Include="Relations.cpp" />
+    <ClCompile Include="Relation\CHeight.cpp" />
+    <ClCompile Include="Relation\CWeight.cpp" />
+    <ClCompile Include="Relation\CWidth.cpp" />
+    <ClCompile Include="Relation\IConstraint.cpp" />
+    <ClCompile Include="Symbolizer_Dot.cpp" />
+    <ClCompile Include="Symbolizer_Line.cpp" />
+    <ClCompile Include="Symbolizer_Linepattern.cpp" />
+    <ClCompile Include="Symbolizer_Point.cpp" />
+    <ClCompile Include="Symbolizer_Raster.cpp" />
+    <ClCompile Include="Tabctrl_Postgis.cpp" />
+    <ClCompile Include="Tab_one_Postgis.cpp" />
+    <ClCompile Include="Tab_two_Postgis.cpp" />
+    <ClCompile Include="ThreadPool.cpp" />
+    <ClCompile Include="TransformManager.cpp" />
+    <ClCompile Include="UserAction.cpp" />
+    <ClCompile Include="FormViewDataSourceGEOJSON.cpp" />
+    <ClCompile Include="ChildFrm.cpp" />
+    <ClCompile Include="FormViewDataSourceOCCI.cpp" />
+    <ClCompile Include="GE\Affine2D.cpp" />
+    <ClCompile Include="GE\Point2D.cpp" />
+    <ClCompile Include="GE\Rect2D.cpp" />
+    <ClCompile Include="GE\Transform2D.cpp" />
+    <ClCompile Include="GE\Vector2D.cpp" />
+    <ClCompile Include="PaneDataSourceGEOJSON.cpp" />
+    <ClCompile Include="FormViewDataSourceGDAL.cpp" />
+    <ClCompile Include="PaneDataSourceGDAL.cpp" />
+    <ClCompile Include="CustomToolTipCtrl.cpp" />
+    <ClCompile Include="CustomPolygonPatternToolTipCtrl.cpp" />
+    <ClCompile Include="FormViewDataSourceCSV.cpp" />
+    <ClCompile Include="FormViewMarkerSymbolizer.cpp" />
+    <ClCompile Include="FormViewPolygonPatternSymbolizer.cpp" />
+    <ClCompile Include="FormViewPolygonSymbolizer.cpp" />
+    <ClCompile Include="MainFrm.cpp" />
+    <ClCompile Include="MarkerSymbolizer.cpp" />
+    <ClCompile Include="OutputBar.cpp" />
+    <ClCompile Include="PaneDataSourceCSV.cpp" />
+    <ClCompile Include="PaneDataSourceOCCI.cpp" />
+    <ClCompile Include="PolygonPatternSymbolizer.cpp" />
+    <ClCompile Include="PolygonSymbolizer.cpp" />
+    <ClCompile Include="PropertiesViewBar.cpp" />
+    <ClCompile Include="SymbolizerProject.cpp" />
+    <ClCompile Include="SymbolizerProjectDoc.cpp" />
+    <ClCompile Include="SymbolizerProjectView.cpp" />
+    <ClCompile Include="Symbolizer\S_Marker.cpp" />
+    <ClCompile Include="TabCtrlMarker.cpp" />
+    <ClCompile Include="TabMarker1.cpp" />
+    <ClCompile Include="TabMarker2.cpp" />
+    <ClCompile Include="TabMarker3.cpp" />
+    <ClCompile Include="ToolBox.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="ViewTree.cpp" />
+    <ClCompile Include="WorkSpaceBar.cpp" />
+    <ClCompile Include="WorkSpaceBar2.cpp" />
+    <ClCompile Include="WorkSpaceBar_Dot.cpp" />
+    <ClCompile Include="WorkSpaceBar_Line.cpp" />
+    <ClCompile Include="WorkSpaceBar_Linepattern.cpp" />
+    <ClCompile Include="WorkSpaceBar_Ogr.cpp" />
+    <ClCompile Include="WorkSpaceBar_Osm.cpp" />
+    <ClCompile Include="WorkSpaceBar_Point.cpp" />
+    <ClCompile Include="WorkSpaceBar_Postgis.cpp" />
+    <ClCompile Include="WorkSpaceBar_Python.cpp" />
+    <ClCompile Include="WorkSpaceBar_Raster.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="SymbolizerProject.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="RES\Image_folder.png" />
+    <Image Include="RES\Reset.png" />
+    <Image Include="res\SymbolizerProject.ico" />
+    <Image Include="res\SymbolizerProjectDoc.ico" />
+    <Image Include="res\Toolbar.bmp" />
+    <Image Include="res\Toolbar.png" />
+    <Image Include="UserImages.png" />
+    <Image Include="res\Workspace.png" />
+    <Image Include="res\tools_page1.png" />
+    <Image Include="res\tools_page2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\SymbolizerProject.rc2" />
+    <None Include="res\SymbolizerProject.toolbar.rc2" />
+    <None Include="SymbolizerProject.aps" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

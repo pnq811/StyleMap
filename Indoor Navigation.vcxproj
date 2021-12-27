@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <ProjectGuid>{9B81C689-73E5-4C5A-8CCB-B53F9C4ECCB5}</ProjectGuid>
+    <Keyword>MFCProj</Keyword>
+    <RootNamespace>IndoorNavigation</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_WINDOWS;_DEBUG;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_SILENCE_CXX17_RESULT_OF_DEPRECATION_WARNING;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <LanguageStandard>stdcpp14</LanguageStandard>
+      <AdditionalIncludeDirectories>E:\packages\vcpkg\installed\x64-windows\include;E:\packages\vcpkg\packages\libosmium_x64-windows\include;E:\packages\vcpkg\packages\pthreadpool_x64-windows\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <LanguageStandard_C>stdc11</LanguageStandard_C>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0409</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_WINDOWS;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0409</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="BmpMem.h" />
+    <ClInclude Include="Building\Building.h" />
+    <ClInclude Include="Building\Edge.h" />
+    <ClInclude Include="Building\Node.h" />
+    <ClInclude Include="CDialogProgress.h" />
+    <ClInclude Include="ChildFrm.h" />
+    <ClInclude Include="ClassView.h" />
+    <ClInclude Include="ConvertProj.h" />
+    <ClInclude Include="CTileZoom.h" />
+    <ClInclude Include="CTree_File.h" />
+    <ClInclude Include="DlgStyleFloor.h" />
+    <ClInclude Include="FileView.h" />
+    <ClInclude Include="FootPrint.h" />
+    <ClInclude Include="framework.h" />
+    <ClInclude Include="GE\Affine2D.h" />
+    <ClInclude Include="GE\AStack.h" />
+    <ClInclude Include="GE\Basics.h" />
+    <ClInclude Include="GE\Define.h" />
+    <ClInclude Include="GE\Point2D.h" />
+    <ClInclude Include="GE\Rect2D.h" />
+    <ClInclude Include="GE\RTree.h" />
+    <ClInclude Include="GE\Transform2D.h" />
+    <ClInclude Include="GE\Vector2D.h" />
+    <ClInclude Include="IndoorNavigation.h" />
+    <ClInclude Include="IndoorNavigationDoc.h" />
+    <ClInclude Include="IndoorNavigationView.h" />
+    <ClInclude Include="lru_cache.h" />
+    <ClInclude Include="MainFrm.h" />
+    <ClInclude Include="myComparator.h" />
+    <ClInclude Include="OutputWnd.h" />
+    <ClInclude Include="pch.h" />
+    <ClInclude Include="PropertiesWnd.h" />
+    <ClInclude Include="Relations.h" />
+    <ClInclude Include="Relation\CHeight.h" />
+    <ClInclude Include="Relation\CWeight.h" />
+    <ClInclude Include="Relation\CWidth.h" />
+    <ClInclude Include="Relation\IConstraint.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="StringProcess.h" />
+    <ClInclude Include="targetver.h" />
+    <ClInclude Include="ThreadPool.h" />
+    <ClInclude Include="TileComparator.h" />
+    <ClInclude Include="TileSystem.h" />
+    <ClInclude Include="TransformActions.h" />
+    <ClInclude Include="TransformManager.h" />
+    <ClInclude Include="UserAction.h" />
+    <ClInclude Include="ViewTree.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="BmpMem.cpp" />
+    <ClCompile Include="Building\Building.cpp" />
+    <ClCompile Include="Building\Edge.cpp" />
+    <ClCompile Include="Building\Node.cpp" />
+    <ClCompile Include="CDialogProgress.cpp" />
+    <ClCompile Include="ChildFrm.cpp" />
+    <ClCompile Include="ClassView.cpp" />
+    <ClCompile Include="ConvertProj.cpp" />
+    <ClCompile Include="CTileZoom.cpp" />
+    <ClCompile Include="CTree_File.cpp" />
+    <ClCompile Include="DlgStyleFloor.cpp" />
+    <ClCompile Include="FileView.cpp" />
+    <ClCompile Include="FootPrint.cpp" />
+    <ClCompile Include="GE\Affine2D.cpp" />
+    <ClCompile Include="GE\Point2D.cpp" />
+    <ClCompile Include="GE\Rect2D.cpp" />
+    <ClCompile Include="GE\Transform2D.cpp" />
+    <ClCompile Include="GE\Vector2D.cpp" />
+    <ClCompile Include="IndoorNavigation.cpp" />
+    <ClCompile Include="IndoorNavigationDoc.cpp" />
+    <ClCompile Include="IndoorNavigationView.cpp" />
+    <ClCompile Include="MainFrm.cpp" />
+    <ClCompile Include="myComparator.cpp" />
+    <ClCompile Include="OutputWnd.cpp" />
+    <ClCompile Include="pch.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="PropertiesWnd.cpp" />
+    <ClCompile Include="Relations.cpp" />
+    <ClCompile Include="Relation\CHeight.cpp" />
+    <ClCompile Include="Relation\CWeight.cpp" />
+    <ClCompile Include="Relation\CWidth.cpp" />
+    <ClCompile Include="Relation\IConstraint.cpp" />
+    <ClCompile Include="ThreadPool.cpp" />
+    <ClCompile Include="TransformManager.cpp" />
+    <ClCompile Include="UserAction.cpp" />
+    <ClCompile Include="ViewTree.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="IndoorNavigation.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="C:\Users\thanh\Downloads\bar.bmp" />
+    <Image Include="C:\Users\thanh\Downloads\buildings.bmp" />
+    <Image Include="C:\Users\thanh\Downloads\elevator.bmp" />
+    <Image Include="C:\Users\thanh\Downloads\female.bmp" />
+    <Image Include="C:\Users\thanh\Downloads\floors.bmp" />
+    <Image Include="C:\Users\thanh\Downloads\male.bmp" />
+    <Image Include="C:\Users\thanh\Downloads\pic.bmp" />
+    <Image Include="C:\Users\thanh\Downloads\stairs.bmp" />
+    <Image Include="C:\Users\thanh\Downloads\TurnLeft.bmp" />
+    <Image Include="C:\Users\thanh\Downloads\TurnRight.bmp" />
+    <Image Include="res\bitmap1.bmp" />
+    <Image Include="res\classview.bmp" />
+    <Image Include="res\classview_hc.bmp" />
+    <Image Include="res\class_view.ico" />
+    <Image Include="res\class_view_hc.ico" />
+    <Image Include="res\explorer.bmp" />
+    <Image Include="res\explorer_hc.bmp" />
+    <Image Include="res\fileview.bmp" />
+    <Image Include="res\fileview_hc.bmp" />
+    <Image Include="res\file_view.ico" />
+    <Image Include="res\file_view_hc.ico" />
+    <Image Include="res\Indoor Navigation.ico" />
+    <Image Include="res\Indoor NavigationDoc.ico" />
+    <Image Include="res\menuimages.bmp" />
+    <Image Include="res\menuimages_hc.bmp" />
+    <Image Include="res\output_wnd.ico" />
+    <Image Include="res\output_wnd_hc.ico" />
+    <Image Include="res\properties.bmp" />
+    <Image Include="res\properties_hc.bmp" />
+    <Image Include="res\properties_wnd.ico" />
+    <Image Include="res\properties_wnd_hc.ico" />
+    <Image Include="res\sort.bmp" />
+    <Image Include="res\sort_hc.bmp" />
+    <Image Include="res\Toolbar.bmp" />
+    <Image Include="res\Toolbar256.bmp" />
+    <Image Include="res\userimages.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\IndoorNavigation.rc2" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

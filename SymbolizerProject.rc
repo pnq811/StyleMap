@@ -1,0 +1,1340 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (United States) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#include ""RES\\SymbolizerProject.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""      // Standard components\r\n"
+    "#include ""afxprint.rc""    // printing/print preview resources\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "RES\\SymbolizerProject.ico"
+
+IDR_SymbolizerProjectTYPE ICON                    "RES\\SymbolizerProjectDoc.ico"
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_MAINFRAME           BITMAP                  "RES\\Toolbar.bmp"
+
+IDR_SORT                BITMAP                  "RES\\sort.bmp"
+
+IDB_SORT_24             BITMAP                  "RES\\sort_hc.bmp"
+
+IDB_FILE_VIEW           BITMAP                  "RES\\fileview.bmp"
+
+IDB_FILE_VIEW_24        BITMAP                  "RES\\fileview_hc.bmp"
+
+IDB_CLASS_VIEW          BITMAP                  "RES\\classview.bmp"
+
+IDB_CLASS_VIEW_24       BITMAP                  "RES\\classview_hc.bmp"
+
+IDR_EXPLORER            BITMAP                  "RES\\explorer.bmp"
+
+IDB_EXPLORER_24         BITMAP                  "RES\\explorer_hc.bmp"
+
+IDR_MENU_IMAGES         BITMAP                  "RES\\menuimages.bmp"
+
+IDB_MENU_IMAGES_24      BITMAP                  "RES\\menuimages_hc.bmp"
+
+IDR_PROPERTIES          BITMAP                  "RES\\properties.bmp"
+
+IDB_PROPERTIES_HC       BITMAP                  "RES\\properties_hc.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// PNG
+//
+
+IDB_TOOLBAR_HC          PNG                     "RES\\Toolbar.png"
+
+IDB_WORKSPACE           PNG                     "RES\\Workspace.png"
+
+IDB_TOOLS_PAGE1         PNG                     "RES\\tools_page1.png"
+
+IDB_TOOLS_PAGE2         PNG                     "RES\\tools_page2.png"
+
+IDB_PNG_FOLDER          PNG                     "RES\\Image_folder.png"
+
+IDB_PNG_RESET_ICON      PNG                     "RES\\Reset.png"
+
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_MAINFRAME TOOLBAR 16, 16
+BEGIN
+    BUTTON      ID_FILE_NEW
+    BUTTON      ID_FILE_OPEN
+    BUTTON      ID_FILE_SAVE
+    SEPARATOR
+    BUTTON      ID_EDIT_CUT
+    BUTTON      ID_EDIT_COPY
+    BUTTON      ID_EDIT_PASTE
+    SEPARATOR
+    BUTTON      ID_FILE_PRINT
+    BUTTON      ID_APP_ABOUT
+END
+
+IDR_PROPERTIES TOOLBAR 16, 15
+BEGIN
+    BUTTON      ID_EXPAND_ALL
+    BUTTON      ID_SORTPROPERTIES
+    BUTTON      ID_PROPERTIES1
+    BUTTON      ID_PROPERTIES2
+END
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+IDR_OUTPUT_POPUP MENU
+BEGIN
+    POPUP "Popup"
+    BEGIN
+        MENUITEM "&Copy",                       ID_EDIT_COPY
+        MENUITEM "&Clear",                      ID_EDIT_CLEAR
+        MENUITEM SEPARATOR
+        MENUITEM "&Hide",                       ID_VIEW_OUTPUTWND
+    END
+END
+
+IDR_MAINFRAME MENU
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&New\tCtrl+N",                ID_FILE_NEW
+        MENUITEM "&Open...\tCtrl+O",            ID_FILE_OPEN
+        MENUITEM SEPARATOR
+        MENUITEM "P&rint Setup...",             ID_FILE_PRINT_SETUP
+        MENUITEM SEPARATOR
+        MENUITEM "Recent File",                 ID_FILE_MRU_FILE1, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "&Close",                      ID_FILE_CLOSE
+        MENUITEM "E&xit",                       ID_APP_EXIT
+    END
+    POPUP "&View"
+    BEGIN
+        POPUP "&Toolbars"
+        BEGIN
+            MENUITEM "",                            ID_VIEW_TOOLBARS
+        END
+        MENUITEM "&Status Bar",                 ID_VIEW_STATUS_BAR
+        POPUP "&Application Look"
+        BEGIN
+            MENUITEM "",                            ID_VIEW_APPLOOK
+        END
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&About SymbolizerProject...", ID_APP_ABOUT
+    END
+    POPUP "Building"
+    BEGIN
+    MENUITEM "Exit", ID_BUILDING_EXIT
+    END
+    POPUP "Relations"
+    BEGIN
+    MENUITEM "INPUT", ID_RELATIONS_INPUT
+    END
+END
+
+IDR_POPUP_TRANSFORMATION MENU
+BEGIN
+    POPUP "Transformation"
+    BEGIN
+        MENUITEM "Zoom All",                    ID_ZOOM_ALL
+        MENUITEM "Zoom Realtime",               ID_ZOOM_REALTIME
+        MENUITEM "Zoom Extents",                ID_ZOOM_EXTENTS
+        MENUITEM "Zoom In",                     ID_ZOOM_IN
+        MENUITEM "Zoom Out",                    ID_ZOOM_OUT
+        MENUITEM "Zoom Center ",                ID_ZOOM_CENTER
+        MENUITEM SEPARATOR
+    END
+END
+
+IDR_SymbolizerProjectTYPE MENU
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&New\tCtrl+N",                ID_FILE_NEW
+        MENUITEM "&Open...\tCtrl+O",            ID_FILE_OPEN
+        MENUITEM "&Close",                      ID_FILE_CLOSE
+        MENUITEM "&Save\tCtrl+S",               ID_FILE_SAVE
+        MENUITEM "Save &As...",                 ID_FILE_SAVE_AS
+        MENUITEM SEPARATOR
+        MENUITEM "&Print...\tCtrl+P",           ID_FILE_PRINT
+        MENUITEM "Print Pre&view",              ID_FILE_PRINT_PREVIEW
+        MENUITEM "P&rint Setup...",             ID_FILE_PRINT_SETUP
+        MENUITEM SEPARATOR
+        MENUITEM "Recent File",                 ID_FILE_MRU_FILE1, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       ID_APP_EXIT
+    END
+    POPUP "&Edit"
+    BEGIN
+        MENUITEM "&Undo\tCtrl+Z",               ID_EDIT_UNDO
+        MENUITEM SEPARATOR
+        MENUITEM "Cu&t\tCtrl+X",                ID_EDIT_CUT
+        MENUITEM "&Copy\tCtrl+C",               ID_EDIT_COPY
+        MENUITEM "&Paste\tCtrl+V",              ID_EDIT_PASTE
+    END
+    POPUP "&View"
+    BEGIN
+        POPUP "&Toolbars"
+        BEGIN
+            MENUITEM "",                            ID_VIEW_TOOLBARS
+        END
+        MENUITEM "&Status Bar",                 ID_VIEW_STATUS_BAR
+        POPUP "&Application Look"
+        BEGIN
+            MENUITEM "",                            ID_VIEW_APPLOOK
+            MENUITEM "Windows &2000",               ID_VIEW_APPLOOK_WIN_2000
+            MENUITEM "Office &XP",                  ID_VIEW_APPLOOK_OFF_XP
+            MENUITEM "&Windows XP",                 ID_VIEW_APPLOOK_WIN_XP
+            MENUITEM "Office 200&3",                ID_VIEW_APPLOOK_OFF_2003
+            MENUITEM "Visual Studio 200&5",         ID_VIEW_APPLOOK_VS_2005
+            MENUITEM "Visual Studio 200&8",         ID_VIEW_APPLOOK_VS_2008
+            POPUP "Office 200&7"
+            BEGIN
+                MENUITEM "&Blue Style",                 ID_VIEW_APPLOOK_OFF_2007_BLUE
+                MENUITEM "B&lack Style",                ID_VIEW_APPLOOK_OFF_2007_BLACK
+                MENUITEM "&Silver Style",               ID_VIEW_APPLOOK_OFF_2007_SILVER
+                MENUITEM "&Aqua Style",                 ID_VIEW_APPLOOK_OFF_2007_AQUA
+            END
+        END
+    END
+    POPUP "&Window"
+    BEGIN
+        MENUITEM "&New Window",                 ID_WINDOW_NEW
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&About SymbolizerProject...", ID_APP_ABOUT
+    END
+    POPUP "Symbolizers"
+    BEGIN
+        MENUITEM "Polygon Symbolizer",          ID_SYMBOLIZERS_POLYGONSYMBOLIZER
+        MENUITEM "Polygon Pattern Symbolizer",  ID_SYMBOLIZERS_POLYGONPATTERNSYMBOLIZER
+        MENUITEM "Marker Symbolizer",           ID_SYMBOLIZERS_MARKERSYMBOLIZER
+    END
+END
+
+IDR_MENU3 MENU
+BEGIN
+    POPUP "NetPoi"
+    BEGIN
+        MENUITEM "From",                        ID_NETPOI_FROM
+        MENUITEM "To",                          ID_NETPOI_TO
+    END
+END
+
+IDR_MENU1 MENU
+BEGIN
+    POPUP "Floor Options"
+    BEGIN
+        MENUITEM "Style Floor",                 32798
+    END
+END
+
+IDR_MENU2 MENU
+BEGIN
+    POPUP "Poi Options"
+    BEGIN
+        MENUITEM "From",                        ID_POIOPTIONS_FROM
+        MENUITEM "To",                          ID_POIOPTIONS_TO
+        MENUITEM "View",                        ID_POIOPTIONS_VIEW
+    END
+END
+
+IDR_CONTEXT_MENU MENU
+BEGIN
+    POPUP "_POPUP_"
+    BEGIN
+        MENUITEM "Cu&t",                        ID_EDIT_CUT
+        MENUITEM "&Copy",                       ID_EDIT_COPY
+        MENUITEM "&Paste",                      ID_EDIT_PASTE
+    END
+END
+
+IDR_POPUP_TOOLBAR MENU
+BEGIN
+    POPUP "DUMMY"
+    BEGIN
+        MENUITEM "Standard Toolbar",            ID_VIEW_TOOLBAR
+        MENUITEM "&Workspace",                  ID_VIEW_WORKSPACE
+        MENUITEM "&Workspace 2",                ID_VIEW_WORKSPACE2
+        MENUITEM "&Output",                     ID_VIEW_OUTPUT
+        MENUITEM "&Toolbox",                    ID_VIEW_TOOLBOX
+        MENUITEM "<User Toolbar>",              ID_VIEW_USER_TOOLBAR2
+        MENUITEM "<User Toolbar>",              ID_VIEW_USER_TOOLBAR3
+        MENUITEM "<User Toolbar>",              ID_VIEW_USER_TOOLBAR4
+        MENUITEM "<User Toolbar>",              ID_VIEW_USER_TOOLBAR5
+        MENUITEM "<User Toolbar>",              ID_VIEW_USER_TOOLBAR6
+        MENUITEM "<User Toolbar>",              ID_VIEW_USER_TOOLBAR7
+        MENUITEM "<User Toolbar>",              ID_VIEW_USER_TOOLBAR9
+        MENUITEM "<User Toolbar>",              ID_VIEW_USER_TOOLBAR8
+        MENUITEM "<User Toolbar>",              ID_VIEW_USER_TOOLBAR10
+        MENUITEM SEPARATOR
+        MENUITEM "&Customize...",               ID_VIEW_CUSTOMIZE
+    END
+END
+
+IDR_POPUP_MDITABS MENU
+BEGIN
+    POPUP "DUMMY"
+    BEGIN
+        MENUITEM "&Save",                       ID_FILE_SAVE
+        MENUITEM "&Close",                      ID_FILE_CLOSE
+        MENUITEM SEPARATOR
+        MENUITEM "New &Horizontal Tab Group",   ID_MDI_NEW_HORZ_TAB_GROUP
+        MENUITEM "New &Vertical Tab Group",     ID_MDI_NEW_VERT_GROUP
+        MENUITEM "Move to Ne&xt Tab Group",     ID_MDI_MOVE_TO_NEXT_GROUP
+        MENUITEM "Move to P&revious Tab Group", ID_MDI_MOVE_TO_PREV_GROUP
+    END
+END
+
+IDR_POPUP_DROP_MDITABS MENU
+BEGIN
+    POPUP "DUMMY"
+    BEGIN
+        MENUITEM "New &Horizontal Tab Group",   ID_MDI_NEW_HORZ_TAB_GROUP
+        MENUITEM "New &Vertical Tab Group",     ID_MDI_NEW_VERT_GROUP
+        MENUITEM "Move to Ne&xt Tab Group",     ID_MDI_MOVE_TO_NEXT_GROUP
+        MENUITEM "Move to P&revious Tab Group", ID_MDI_MOVE_TO_PREV_GROUP
+        MENUITEM SEPARATOR
+        MENUITEM "&Cancel",                     ID_MDI_CANCEL
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS
+BEGIN
+    "N",            ID_FILE_NEW,            VIRTKEY, CONTROL
+    "O",            ID_FILE_OPEN,           VIRTKEY, CONTROL
+    "S",            ID_FILE_SAVE,           VIRTKEY, CONTROL
+    "P",            ID_FILE_PRINT,          VIRTKEY, CONTROL
+    "Z",            ID_EDIT_UNDO,           VIRTKEY, CONTROL
+    "X",            ID_EDIT_CUT,            VIRTKEY, CONTROL
+    "C",            ID_EDIT_COPY,           VIRTKEY, CONTROL
+    "V",            ID_EDIT_PASTE,          VIRTKEY, CONTROL
+    VK_BACK,        ID_EDIT_UNDO,           VIRTKEY, ALT
+    VK_DELETE,      ID_EDIT_CUT,            VIRTKEY, SHIFT
+    VK_INSERT,      ID_EDIT_COPY,           VIRTKEY, CONTROL
+    VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY, SHIFT
+    VK_F6,          ID_NEXT_PANE,           VIRTKEY 
+    VK_F6,          ID_PREV_PANE,           VIRTKEY, SHIFT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 235, 55
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About SymbolizerProject"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,7,7,21,20
+    LTEXT           "SymbolizerProject Version 1.0",IDC_STATIC,40,10,119,8,SS_NOPREFIX
+    LTEXT           "Copyright (C) 2021",IDC_STATIC,40,25,119,8
+    DEFPUSHBUTTON   "OK",IDOK,178,7,50,16,WS_GROUP
+    PUSHBUTTON      "http://www.<MyCompany>.com",IDC_COMPANY_URL,40,36,119,14
+END
+
+
+
+IDD_DIALOGBAR DIALOGEX 0, 0, 102, 129
+STYLE DS_SETFONT | WS_CHILD | WS_VISIBLE | WS_CLIPSIBLINGS | WS_CLIPCHILDREN
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    LISTBOX         IDC_LIST_DLGBAR,7,21,88,73,LBS_SORT | LBS_OWNERDRAWFIXED | LBS_HASSTRINGS | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Dialog bar",IDC_STATIC_DLGBAR,7,7,44,8
+    CONTROL         "CheckBox",IDC_CHECK_DLGBAR,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,112,49,10
+END
+
+IDD_CFormViewPolygonSymbolizer DIALOGEX 0, 0, 164, 331
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD
+FONT 8, "MS Shell Dlg", 0, 0, 0x0
+BEGIN
+    EDITTEXT        IDC_EDIT_POLYGON_GAMMA,18,83,137,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_POLYGON_FILL_OPACITY,18,57,137,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_POLYGON_SIMPLIFY,18,136,137,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_POLYGON_SMOOTH,18,188,137,12,ES_AUTOHSCROLL
+    COMBOBOX        IDC_COMBO_POLYGON_GAMMA_METHOD,18,110,137,30,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "Clip",IDC_CHECK_POLYGON_CLIP,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,127,28,28,10
+    COMBOBOX        IDC_COMBO_POLYGON_SYMPLIFY_ALGORITHM,18,162,137,30,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO_POLYGON_GEOMETRY_TRANSFORM,18,215,137,30,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO_POLYGON_COMPOP,18,241,137,30,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "",IDC_MFCCOLORBUTTON_POLYGON_FILL,"MfcColorButton",WS_TABSTOP,18,28,82,12
+    LTEXT           "Fill:",IDC_STATIC_POLYGON_FILL,18,20,13,8
+    LTEXT           "Fill Opacity:",IDC_STATIC_POLYGON_FILL_OPACITY,18,46,39,8
+    LTEXT           "Gamma:",IDC_STATIC_POLYGON_GAMMA,18,72,29,8
+    LTEXT           "Gamma Method:",IDC_STATIC_POLYGON_GAMMA_METHOD,18,98,68,9
+    LTEXT           "Simplify:",IDC_STATIC_POLYGON_SIMPLIFY,18,125,30,8
+    LTEXT           "Simplify algorithm:",IDC_STATIC_POLYGON_SIMPLIFY_ALGORITHM,18,151,72,8
+    LTEXT           "Smooth:",IDC_STATIC_POLYGON_SMOOTH,18,177,29,8
+    LTEXT           "Geometry Transform:",IDC_STATIC_POLYGON_GEOMETRY_TRANSFORM,18,203,73,9
+    LTEXT           "Comp-op:",IDC_STATIC_POLYGON_COMPOP,18,230,34,8
+    EDITTEXT        IDC_SCRIPT_POLYGON_TEXT,18,267,137,57,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "Script:",IDC_STATIC,18,256,23,8
+    CONTROL         "Default",IDC_CHECK_POLYGON_DEFAULT,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,18,7,39,10
+END
+
+IDD_CFormViewPolygonPatternSymbolizer DIALOGEX 0, 0, 158, 375
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD
+FONT 8, "MS Shell Dlg", 0, 0, 0x0
+BEGIN
+    EDITTEXT        IDC_EDIT_POLYGON_PATTERN_FILE,7,34,107,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_POLYGON_PATTERN_GAMMA,7,84,139,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_SMOOTH_POLYGON_PATTERN,7,185,139,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_POLYGON_PATTERN_OPACITY,7,109,139,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_SIMPLIFY_POLYGON_PATTERN,7,134,139,12,ES_AUTOHSCROLL
+    CONTROL         "Default",IDC_CHECK_POLYGON_PATTERN_DEFAULT,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,7,39,10
+    COMBOBOX        IDC_COMBO_POLYGON_PATTERN_ALIGNMENT,7,60,139,30,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "Clip",IDC_CHECK_POLYGON_PATTERN_CLIP,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,203,29,10
+    COMBOBOX        IDC_COMBO_POLYGON_PATTERN_SIMPLIFY_ALGORITHM,7,160,139,30,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO_POLYGON_PATTERN_GEOMETRY_TRANSFORM,7,225,139,30,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO_POLYGON_PATTERN_TRANSFORM,7,251,139,30,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO_POLYGON_PATTERN_COMPOP,7,277,139,30,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "File:",IDC_STATIC_POLYGON_PATTERN_FILE,7,22,15,8
+    LTEXT           "Alignment:",IDC_STATIC_POLYGON_PATTERN_ALIGNMENT,7,50,36,8
+    LTEXT           "Gamma:",IDC_STATIC_POLYGON_PATTERN_GAMMA,7,74,29,8
+    LTEXT           "Opacity:",IDC_STATIC,7,99,28,8
+    LTEXT           "Simplify:",IDC_STATIC_POLYGON_PATTERN_SIMPLIFY,7,124,30,8
+    LTEXT           "Simplify Algorithm:",IDC_STATIC_POLYGON_PATTERN_SIMPLIFY_ALGORITHM,7,150,71,8
+    LTEXT           "Smooth:",IDC_STATIC_POLYGON_PATTERN_SMOOTH,7,175,29,8
+    LTEXT           "Geometry Transform:",IDC_STATIC_POLYGON_PATTERN_GEOMTRY_TRANSFORM,7,216,77,8
+    LTEXT           "Transform:",IDC_STATIC_POLYGON_PATTERN_TRANSFORM,9,240,41,9
+    LTEXT           "Compop:",IDC_STATIC_POLYGON_PATTERN_COMPOP,7,267,33,8
+    EDITTEXT        IDC_EDIT_TEXT_POLYGON_PATTERN,7,319,139,53,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "Script",IDC_STATIC,7,310,20,8
+    LTEXT           "Browse",IDC_STATIC_POLYGON_PATTEN_FOLDER,121,34,25,18
+END
+
+IDD_CFormViewMarkerSymbolizer DIALOGEX 0, 0, 197, 395
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD
+FONT 8, "MS Shell Dlg", 0, 0, 0x0
+BEGIN
+    CONTROL         "",IDC_TAB_MARKER_SYMBOLIZER,"SysTabControl32",TCS_BUTTONS | TCS_TOOLTIPS | TCS_FOCUSNEVER | WS_BORDER,7,26,180,260,WS_EX_TRANSPARENT
+    CONTROL         "Default",IDC_CHECK_MARKER_DEFAULT,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,10,39,10
+    EDITTEXT        IDC_EDIT_SCRIPT_MARKER,7,352,178,34,ES_MULTILINE | ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "Script:",IDC_STATIC_SCRIPT_MARKER,7,337,23,8
+END
+
+
+IDD_STYLE_FLOOR DIALOGEX 0, 0, 255, 75
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,132,54,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,198,54,50,14
+    LTEXT           "Click to chose color pen: ",IDC_STATIC,15,18,80,8
+    PUSHBUTTON      "Color",IDC_CPEN,109,16,50,14
+    LTEXT           "Width pen:",IDC_STATIC,16,38,36,8
+    EDITTEXT        IDC_EDIT_WIDTH,111,38,48,14,ES_AUTOHSCROLL
+END
+
+
+IDD_TAB_MARKER_1 DIALOGEX 0, 0, 181, 269
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD
+FONT 8, "MS Shell Dlg", 400, 0, 0x0
+BEGIN
+    EDITTEXT        IDC_EDIT_MARKER_FILE,16,10,128,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_MARKER_OPACITY,16,36,71,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_MARKER_FILL_OPACITY,99,36,71,14,ES_AUTOHSCROLL
+    LTEXT           "File:",IDC_STATIC_MARKER_FILE,16,0,15,8
+    LTEXT           "Opacity:",IDC_STATIC_MARKER_OPACITY,16,26,28,8
+    LTEXT           "FIll opacity:",IDC_STATIC_MARKER_FILL_OPACITY,99,26,39,8
+    LTEXT           "Comp-op:",IDC_STATIC_MARKER_COMP_OP,16,220,39,8
+    COMBOBOX        IDC_COMBO_MARKER_COMPOP,16,230,154,30,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Direction:",IDC_STATIC_MARKER_DIRECTION,16,244,32,8
+    COMBOBOX        IDC_COMBO_MARKER_DIRECTION,16,254,154,30,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "",IDC_MFCCOLORBUTTON_MARKER_STROKE,"MfcColorButton",WS_TABSTOP,16,66,71,14
+    EDITTEXT        IDC_EDIT_MARKER_STROKE_WIDTH,16,94,71,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_MARKER_STROKE_OPACITY,16,122,71,15,ES_AUTOHSCROLL
+    COMBOBOX        IDC_COMBO_MARKER_PLACEMENT,16,151,154,30,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO_MARKER_MULTI_POLICY,16,177,154,30,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO_MARKER_MARKER_TYPE,16,203,154,30,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_EDIT_MARKER_WIDTH,99,93,71,15,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_MARKER_HEIGHT,99,122,71,15,ES_AUTOHSCROLL
+    CONTROL         "",IDC_MFCCOLORBUTTON_MARKER_FILL,"MfcColorButton",WS_TABSTOP,99,65,71,14
+    LTEXT           "Stroke:",IDC_STATIC_MARKER_STROKE,16,58,25,8
+    LTEXT           "Stroke Width:",IDC_STATIC_MARKER_STROKE_WIDTH,16,84,46,8
+    LTEXT           "Stroke Opacity:",IDC_STATIC_MARKER_STROKE_OPACITY,16,111,51,8
+    LTEXT           "Placement:",IDC_STATIC_MARKER_PLACEMENT,16,140,38,8
+    LTEXT           "Multi-policy:",IDC_STATIC_MARKER_MULTI_POLICY,16,168,40,8
+    LTEXT           "Marker Type:",IDC_STATIC_MARKER_MARKER_TYPE,16,192,45,8
+    LTEXT           "Width:",IDC_STATIC_MARKER_WIDTH,99,82,23,8
+    LTEXT           "Height:",IDC_STATIC_MARKER_HEIGHT,99,111,24,8
+    LTEXT           "Fill:",IDC_STATIC_MARKER_FILL,99,58,18,8
+    LTEXT           "Browse",IDC_STATIC_OPEN_FOLDER,151,10,19,13
+END
+
+IDD_TAB_MARKER_2 DIALOGEX 0, 0, 190, 254
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD
+FONT 8, "MS Shell Dlg", 400, 0, 0x0
+BEGIN
+    COMBOBOX        IDC_COMBO_MARKER_SIMPLIFY_ALGORITHM,11,167,166,30,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Simplify Algorithm:",IDC_STATIC_MARKER_SIMPLIFY_ALGORITHM,11,155,70,9
+    LTEXT           "Simplify:",IDC_STATIC_MARKER_SIMPLIFY,11,117,30,8
+    EDITTEXT        IDC_EDIT_MARKER_SIMPLIFY,11,128,166,14,ES_AUTOHSCROLL
+    LTEXT           "Smooth:",IDC_STATIC_MARKER_SMOOTH,11,6,29,8
+    EDITTEXT        IDC_EDIT_MARKER_SMOOTH,11,16,70,14,ES_AUTOHSCROLL
+    COMBOBOX        IDC_COMBO_MARKER_GEOMETRY_TRANSFORM,11,239,166,30,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Geometry Transform:",IDC_STATIC_MARKER_GEOMETRY_TRANSFORM,11,228,77,8
+    LTEXT           "Offset:",IDC_STATIC_MARKER_OFFSET,107,6,23,9
+    EDITTEXT        IDC_EDIT_MARKER_OFFSET,107,16,70,14,ES_AUTOHSCROLL
+    COMBOBOX        IDC_COMBO_MARKER_TRANSFORM,11,203,166,30,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Transform:",IDC_STATIC_MARKER_TRANSFORM,11,192,38,8
+    EDITTEXT        IDC_EDIT_MARKER_SPACING,11,54,70,14,ES_AUTOHSCROLL
+    LTEXT           "Spacing:",IDC_STATIC_MARKER_SPACING,11,44,30,8
+    LTEXT           "Max error:",IDC_STATIC_MARKER_MAX_ERROR,107,44,36,8
+    EDITTEXT        IDC_EDIT_MARKER_MAX_ERROR,107,54,70,14,ES_AUTOHSCROLL
+    CONTROL         "Allow Overlap",IDC_CHECK_MARKER_ALLOW_OVERLAP,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,11,95,61,10
+    CONTROL         "Avoid edges",IDC_CHECK_MARKER_AVOID_EDGES,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,107,81,55,10
+    CONTROL         "Ignore placement",IDC_CHECK_MARKER_IGNORE_PLACEMENT,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,11,81,73,10
+    CONTROL         "Clip",IDC_CHECK_MARKER_CLIP,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,107,94,28,11
+END
+
+IDD_TAB_MARKER_3 DIALOGEX 0, 0, 209, 298
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD
+FONT 8, "MS Shell Dlg", 400, 0, 0x0
+BEGIN
+END
+
+IDD_FORMVIEW_DATASOURCE_CSV DIALOGEX 0, 0, 185, 445
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD
+FONT 8, "MS Shell Dlg", 400, 0, 0x0
+BEGIN
+    EDITTEXT        IDC_EDIT_CSV_FILE,17,58,88,14,ES_AUTOHSCROLL
+    LTEXT           "File",IDC_STATIC_CSV_FILE,17,48,12,8
+    LTEXT           "Static",IDC_STATIC_CSV_FILE_OPEN,127,58,21,12
+    EDITTEXT        IDC_EDIT_CSV_BASE,17,92,88,14,ES_AUTOHSCROLL
+    LTEXT           "Base",IDC_STATIC_CSV_BASE,17,82,16,8
+    LTEXT           "Static",IDC_STATIC_CSV_BASE_OPEN,127,94,21,12
+    EDITTEXT        IDC_EDIT_CSV_ENCODING,17,126,131,14,ES_AUTOHSCROLL
+    LTEXT           "Encoding",IDC_STATIC_CSV_ENCODING,17,116,30,8
+    EDITTEXT        IDC_EDIT_CSV_ROW_LIMIT,17,159,131,14,ES_AUTOHSCROLL
+    LTEXT           "Row limit",IDC_STATIC_CSV_ROW_LIMIT,17,149,31,8
+    EDITTEXT        IDC_EDIT_CSV_ESCAPE,17,197,131,14,ES_AUTOHSCROLL
+    LTEXT           "Escape",IDC_STATIC_CSV_ESCAPE,17,187,24,8
+    EDITTEXT        IDC_EDIT_CSV_QUOTE,17,227,131,14,ES_AUTOHSCROLL
+    LTEXT           "Quote",IDC_STATIC_CSV_QUOTE,17,217,20,8
+    EDITTEXT        IDC_EDIT_CSV_SEPARATER,17,260,131,14,ES_AUTOHSCROLL
+    LTEXT           "Separator",IDC_STATIC_CSV_SEPARATOR,17,250,34,8
+    EDITTEXT        IDC_EDIT_CSV_HEADERS,17,290,131,14,ES_AUTOHSCROLL
+    LTEXT           "Headers",IDC_STATIC_CSV_HEADERS,17,280,28,8
+    EDITTEXT        IDC_EDIT_CSV_FILE_SIZE_MAX,17,324,131,14,ES_AUTOHSCROLL
+    LTEXT           "Filesize Max",IDC_STATIC_CSV_FILE_SIZE_MAX,17,314,40,8
+    CONTROL         "Strict",IDC_CHECK_CSV_STRICT,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,17,350,33,10
+    EDITTEXT        IDC_EDIT_CSV_SCRIPT,17,385,131,53,ES_MULTILINE | ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "Script",IDC_STATIC_CSV_SCRIPT,17,372,20,8
+    LTEXT           "Default",IDC_STATIC_RESET_DEFAULT,80,18,25,16
+END
+
+IDD_FORMVIEW_DATASOURCE_GDAL DIALOGEX 0, 0, 157, 375
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD
+FONT 8, "MS Shell Dlg", 400, 0, 0x0
+BEGIN
+    EDITTEXT        IDC_EDIT_GDAL_FILE,17,53,87,14,ES_AUTOHSCROLL
+    LTEXT           "File",IDC_STATIC_GDAL_FILE,17,42,12,8
+    LTEXT           "Static",IDC_STATIC_GDAL_FILE_OPEN,127,54,21,12
+    EDITTEXT        IDC_EDIT_GDAL_BASE,17,81,87,14,ES_AUTOHSCROLL
+    LTEXT           "Base",IDC_STATIC_GDAL_BASE,17,70,16,8
+    LTEXT           "Static",IDC_STATIC_GDAL_BASE_OPEN,127,83,21,12
+    EDITTEXT        IDC_EDIT_GDAL_ENCODING,17,109,131,14,ES_AUTOHSCROLL
+    LTEXT           "Encoding",IDC_STATIC_GDAL_ENCODING,17,98,30,8
+    EDITTEXT        IDC_EDIT_GDAL_MAX_IMAGE_AREA,17,141,131,14,ES_AUTOHSCROLL
+    LTEXT           "Max image area",IDC_STATIC_GDAL_MAX_IMAGE_AREA,17,130,54,8
+    EDITTEXT        IDC_EDIT_GDAL_BAND,17,171,131,14,ES_AUTOHSCROLL
+    LTEXT           "Band",IDC_STATIC_GDAL_BAND,17,160,17,8
+    EDITTEXT        IDC_EDIT_GDAL_NODATA,17,201,131,14,ES_AUTOHSCROLL
+    LTEXT           "Nodata",IDC_STATIC_GDAL_NODATA,17,190,24,8
+    EDITTEXT        IDC_EDIT_GDAL_NODATA_TOLERANCE,17,235,131,14,ES_AUTOHSCROLL
+    LTEXT           "Nodata Tolerance",IDC_STATIC_GDAL_NODATA_TOLERANCE,17,224,59,8
+    CONTROL         "Shared",IDC_CHECK_GDAL_SHARE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,17,262,39,10
+    EDITTEXT        IDC_EDIT_GDAL_SCRIPT,18,301,130,69,ES_MULTILINE | ES_AUTOHSCROLL | ES_READONLY | WS_VSCROLL
+    LTEXT           "Static",IDC_STATIC_GDAL_RESET,65,13,19,10
+    LTEXT           "Script",IDC_STATIC_GDAL_SCRIPT,17,280,20,8
+END
+
+IDD_FORMVIEW_DATASOURCE_GEOJSON DIALOGEX 0, 0, 155, 286
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD
+FONT 8, "MS Shell Dlg", 400, 0, 0x0
+BEGIN
+    EDITTEXT        IDC_EDIT_GEOJSON_FILE,16,55,97,14,ES_AUTOHSCROLL
+    LTEXT           "File",IDC_STATIC_GEOJSON_FILE,16,44,12,8
+    LTEXT           "Static",IDC_STATIC_GEOJSON_FILE_OPEN,126,55,21,12
+    EDITTEXT        IDC_EDIT_GEOJSON_BASE,16,83,97,14,ES_AUTOHSCROLL
+    LTEXT           "Base",IDC_STATIC_GEOJSON_BASE,16,72,16,8
+    LTEXT           "Static",IDC_STATIC_GEOJSON_BASE_OPEN,126,85,21,12
+    EDITTEXT        IDC_EDIT_GEOJSON_ENCODING,16,111,131,14,ES_AUTOHSCROLL
+    LTEXT           "Encoding",IDC_STATIC_GEOJSON_ENCODING,16,100,30,8
+    EDITTEXT        IDC_EDIT_GEOJSON_INLINE,16,139,131,14,ES_AUTOHSCROLL
+    LTEXT           "Inline",IDC_STATIC_GEOJSON_INLINE,16,128,19,8
+    EDITTEXT        IDC_EDIT_GEOJSON_SCRIPT,17,189,130,90,ES_MULTILINE | ES_AUTOHSCROLL | ES_READONLY | WS_VSCROLL
+    LTEXT           "Script",IDC_STATIC_GEOJSON_SCRIPT,17,167,20,8
+    LTEXT           "Static",IDC_STATIC_GEOJSON_RESET,70,16,19,8
+END
+
+IDD_FORMVIEW_DATASOURCE_OCCI DIALOGEX 0, 0, 154, 196
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD
+FONT 8, "MS Shell Dlg", 400, 0, 0x0
+BEGIN
+    EDITTEXT        IDC_EDIT_OCCI_ENCODING,14,55,130,14,ES_AUTOHSCROLL
+    LTEXT           "Encoding",IDC_STATIC_OCCI_ENCODING,14,44,31,8
+    EDITTEXT        IDC_EDIT_OCCI_SCRIPT,14,99,130,90,ES_MULTILINE | ES_AUTOHSCROLL | ES_READONLY | WS_VSCROLL
+    LTEXT           "Static",IDC_STATIC_OCCI_RESET,70,7,19,8
+END
+
+IDD_DIALOG1 DIALOGEX 0, 0, 240, 116
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Relations"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+DEFPUSHBUTTON   "OK", IDOK, 73, 76, 50, 14
+PUSHBUTTON      "Cancel", IDCANCEL, 139, 75, 50, 14
+EDITTEXT        IDC_WEIGHT, 78, 8, 69, 14, ES_AUTOHSCROLL
+LTEXT           "Weight:", IDC_STATIC, 36, 11, 24, 8
+EDITTEXT        IDC_HEIGHT, 78, 30, 69, 14, ES_AUTOHSCROLL
+LTEXT           "Height:", IDC_STATIC, 36, 32, 24, 8
+EDITTEXT        IDC_WIDHT, 78, 51, 70, 14, ES_AUTOHSCROLL
+LTEXT           " Width:", IDC_STATIC, 34, 53, 25, 8
+LTEXT           "kg", IDC_STATIC, 150, 11, 24, 8
+LTEXT           "m", IDC_STATIC, 151, 33, 8, 8
+LTEXT           "m", IDC_STATIC, 150, 55, 8, 8
+END
+
+
+IDD_DIALOG_PROGRESS DIALOGEX 0, 0, 289, 65
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_POPUP | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+LTEXT           "Loading... ", IDC_STATIC, 99, 22, 38, 8
+LTEXT           "0", IDC_STATIC_NUMTILEDRAW, 141, 22, 8, 8
+LTEXT           "/", IDC_STATIC, 153, 22, 8, 8
+LTEXT           "100", IDC_STATIC_NUMTILE, 163, 22, 13, 8
+CONTROL         "", IDC_PROGRESS1, "msctls_progress32", PBS_SMOOTHREVERSE | WS_BORDER, 15, 36, 254, 14
+END
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904B0"
+        BEGIN
+            VALUE "CompanyName", "TODO: <Company name>"
+            VALUE "FileDescription", "TODO: <File description>"
+            VALUE "FileVersion", "1.0.0.1"
+            VALUE "InternalName", "SymbolizerProject.exe"
+            VALUE "LegalCopyright", "TODO: (c) <Company name>.  All rights reserved."
+            VALUE "OriginalFilename", "SymbolizerProject.exe"
+            VALUE "ProductName", "TODO: <Product name>"
+            VALUE "ProductVersion", "1.0.0.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_DIALOGBAR, DIALOG
+    BEGIN
+    END
+
+    IDD_CFormViewPolygonSymbolizer, DIALOG
+    BEGIN
+        LEFTMARGIN, 5
+        RIGHTMARGIN, 155
+        VERTGUIDE, 18
+        VERTGUIDE, 57
+        VERTGUIDE, 66
+        VERTGUIDE, 153
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 324
+    END
+
+    IDD_CFormViewPolygonPatternSymbolizer, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 156
+        VERTGUIDE, 50
+        VERTGUIDE, 146
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 372
+        HORZGUIDE, 33
+    END
+
+    IDD_CFormViewMarkerSymbolizer, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 193
+        TOPMARGIN, 1
+        BOTTOMMARGIN, 386
+    END
+
+    IDD_TAB_MARKER_1, DIALOG
+    BEGIN
+        LEFTMARGIN, 6
+        RIGHTMARGIN, 180
+        VERTGUIDE, 16
+        VERTGUIDE, 46
+        VERTGUIDE, 57
+        VERTGUIDE, 87
+        VERTGUIDE, 99
+        VERTGUIDE, 144
+        VERTGUIDE, 170
+        BOTTOMMARGIN, 266
+        HORZGUIDE, 10
+        HORZGUIDE, 114
+    END
+
+    IDD_TAB_MARKER_2, DIALOG
+    BEGIN
+        RIGHTMARGIN, 183
+        VERTGUIDE, 11
+        VERTGUIDE, 81
+        VERTGUIDE, 107
+        VERTGUIDE, 124
+        VERTGUIDE, 177
+        VERTGUIDE, 184
+        TOPMARGIN, 6
+        BOTTOMMARGIN, 251
+        HORZGUIDE, 19
+        HORZGUIDE, 39
+        HORZGUIDE, 43
+        HORZGUIDE, 77
+        HORZGUIDE, 91
+        HORZGUIDE, 102
+    END
+
+    IDD_TAB_MARKER_3, DIALOG
+    BEGIN
+        LEFTMARGIN, 8
+        RIGHTMARGIN, 202
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 291
+    END
+
+    IDD_FORMVIEW_DATASOURCE_CSV, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 178
+        VERTGUIDE, 17
+        VERTGUIDE, 105
+        VERTGUIDE, 148
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 438
+    END
+
+    IDD_FORMVIEW_DATASOURCE_GDAL, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 148
+        VERTGUIDE, 17
+        VERTGUIDE, 104
+        VERTGUIDE, 148
+        TOPMARGIN, 3
+        BOTTOMMARGIN, 370
+    END
+
+    IDD_FORMVIEW_DATASOURCE_GEOJSON, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 147
+        VERTGUIDE, 17
+        VERTGUIDE, 114
+        VERTGUIDE, 148
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 279
+    END
+
+    IDD_FORMVIEW_DATASOURCE_OCCI, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 147
+        VERTGUIDE, 14
+        VERTGUIDE, 144
+        VERTGUIDE, 150
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 189
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// AFX_DIALOG_LAYOUT
+//
+
+IDD_CFormViewPolygonSymbolizer AFX_DIALOG_LAYOUT
+BEGIN
+    0,
+    0, 0, 100, 0,
+    0, 0, 100, 0,
+    0, 0, 100, 0,
+    0, 0, 100, 0,
+    0, 0, 100, 0,
+    100, 0, 0, 0,
+    0, 0, 100, 0,
+    0, 0, 100, 0,
+    0, 0, 100, 0,
+    0, 0, 100, 0,
+    0, 0, 0, 0,
+    0, 0, 0, 0,
+    0, 0, 0, 0,
+    0, 0, 0, 0,
+    0, 0, 0, 0,
+    0, 0, 0, 0,
+    0, 0, 0, 0,
+    0, 0, 0, 0,
+    0, 0, 0, 0,
+    0, 0, 100, 100,
+    0, 0, 0, 0,
+    0, 0, 0, 0
+END
+
+IDD_CFormViewPolygonPatternSymbolizer AFX_DIALOG_LAYOUT
+BEGIN
+    0,
+    0, 0, 100, 0,
+    0, 0, 100, 0,
+    0, 0, 100, 0,
+    0, 0, 100, 0,
+    0, 0, 100, 0,
+    0, 0, 0, 0,
+    0, 0, 100, 0,
+    0, 0, 0, 0,
+    0, 0, 100, 0,
+    0, 0, 100, 0,
+    0, 0, 100, 0,
+    0, 0, 100, 0,
+    0, 0, 0, 0,
+    0, 0, 0, 0,
+    0, 0, 0, 0,
+    0, 0, 0, 0,
+    0, 0, 0, 0,
+    0, 0, 0, 0,
+    0, 0, 0, 0,
+    0, 0, 0, 0,
+    0, 0, 0, 0,
+    0, 0, 0, 0,
+    0, 0, 100, 100,
+    0, 0, 0, 0,
+    100, 0, 0, 0
+END
+
+IDD_CFormViewMarkerSymbolizer AFX_DIALOG_LAYOUT
+BEGIN
+    0,
+    0, 0, 100, 100,
+    0, 0, 0, 0,
+    0, 0, 100, 100,
+    0, 0, 0, 0
+END
+
+IDD_TAB_MARKER_1 AFX_DIALOG_LAYOUT
+BEGIN
+    0,
+    0, 0, 100, 0,
+    0, 0, 50, 0,
+    50, 0, 50, 0,
+    0, 0, 0, 0,
+    0, 0, 0, 0,
+    50, 0, 50, 0,
+    0, 0, 0, 0,
+    0, 0, 100, 0,
+    0, 0, 0, 0,
+    0, 0, 100, 0,
+    0, 0, 50, 0,
+    0, 0, 50, 0,
+    0, 0, 50, 0,
+    0, 0, 100, 0,
+    0, 0, 100, 0,
+    0, 0, 100, 0,
+    50, 0, 50, 0,
+    50, 0, 50, 0,
+    50, 0, 50, 0,
+    0, 0, 0, 0,
+    0, 0, 0, 0,
+    0, 0, 0, 0,
+    0, 0, 0, 0,
+    0, 0, 0, 0,
+    0, 0, 0, 0,
+    50, 0, 0, 0,
+    50, 0, 0, 0,
+    50, 0, 0, 0,
+    100, 0, 0, 0
+END
+
+IDD_TAB_MARKER_2 AFX_DIALOG_LAYOUT
+BEGIN
+    0,
+    0, 0, 100, 0,
+    0, 0, 0, 0,
+    0, 0, 0, 0,
+    0, 0, 100, 0,
+    0, 0, 0, 0,
+    0, 0, 50, 0,
+    0, 0, 100, 0,
+    0, 0, 0, 0,
+    50, 0, 0, 0,
+    50, 0, 50, 0,
+    0, 0, 100, 0,
+    0, 0, 0, 0,
+    0, 0, 50, 0,
+    0, 0, 0, 0,
+    50, 0, 0, 0,
+    50, 0, 50, 0,
+    0, 0, 0, 0,
+    50, 0, 0, 0,
+    0, 0, 0, 0,
+    50, 0, 0, 0
+END
+
+IDD_TAB_MARKER_3 AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_FORMVIEW_DATASOURCE_CSV AFX_DIALOG_LAYOUT
+BEGIN
+    0,
+    0, 0, 100, 0,
+    0, 0, 0, 0,
+    100, 0, 0, 0,
+    0, 0, 100, 0,
+    0, 0, 0, 0,
+    100, 0, 0, 0,
+    0, 0, 100, 0,
+    0, 0, 0, 0,
+    0, 0, 100, 0,
+    0, 0, 0, 0,
+    0, 0, 100, 0,
+    0, 0, 0, 0,
+    0, 0, 100, 0,
+    0, 0, 0, 0,
+    0, 0, 100, 0,
+    0, 0, 0, 0,
+    0, 0, 100, 0,
+    0, 0, 0, 0,
+    0, 0, 100, 0,
+    0, 0, 0, 0,
+    0, 0, 0, 0,
+    0, 0, 100, 100,
+    0, 0, 0, 0,
+    50, 0, 0, 0
+END
+
+IDD_FORMVIEW_DATASOURCE_GDAL AFX_DIALOG_LAYOUT
+BEGIN
+    0,
+    0, 0, 100, 0,
+    0, 0, 0, 0,
+    100, 0, 0, 0,
+    0, 0, 100, 0,
+    0, 0, 0, 0,
+    100, 0, 0, 0,
+    0, 0, 100, 0,
+    0, 0, 0, 0,
+    0, 0, 100, 0,
+    0, 0, 0, 0,
+    0, 0, 100, 0,
+    0, 0, 0, 0,
+    0, 0, 100, 0,
+    0, 0, 0, 0,
+    0, 0, 100, 0,
+    0, 0, 0, 0,
+    0, 0, 0, 0,
+    0, 0, 100, 100,
+    50, 0, 0, 0,
+    0, 0, 0, 0
+END
+
+IDD_FORMVIEW_DATASOURCE_GEOJSON AFX_DIALOG_LAYOUT
+BEGIN
+    0,
+    0, 0, 100, 0,
+    0, 0, 0, 0,
+    100, 0, 0, 0,
+    0, 0, 100, 0,
+    0, 0, 0, 0,
+    100, 0, 0, 0,
+    0, 0, 100, 0,
+    0, 0, 0, 0,
+    0, 0, 100, 0,
+    0, 0, 0, 0,
+    0, 0, 100, 100,
+    0, 0, 0, 0,
+    50, 0, 0, 0
+END
+
+IDD_FORMVIEW_DATASOURCE_OCCI AFX_DIALOG_LAYOUT
+BEGIN
+    0,
+    0, 0, 100, 0,
+    0, 0, 0, 0,
+    0, 0, 100, 100,
+    50, 0, 0, 0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_CFormViewPolygonSymbolizer DLGINIT
+BEGIN
+    IDC_MFCCOLORBUTTON_POLYGON_FILL, 0x37c, 215, 0
+0x4d3c, 0x4346, 0x6f43, 0x6f6c, 0x4272, 0x7475, 0x6f74, 0x5f6e, 0x6e45, 
+0x6261, 0x656c, 0x744f, 0x6568, 0x4272, 0x7475, 0x6f74, 0x3e6e, 0x5254, 
+0x4555, 0x2f3c, 0x464d, 0x4343, 0x6c6f, 0x726f, 0x7542, 0x7474, 0x6e6f, 
+0x455f, 0x616e, 0x6c62, 0x4f65, 0x6874, 0x7265, 0x7542, 0x7474, 0x6e6f, 
+0x3c3e, 0x464d, 0x4343, 0x6c6f, 0x726f, 0x7542, 0x7474, 0x6e6f, 0x455f, 
+0x616e, 0x6c62, 0x4165, 0x7475, 0x6d6f, 0x7461, 0x6369, 0x7542, 0x7474, 
+0x6e6f, 0x463e, 0x4c41, 0x4553, 0x2f3c, 0x464d, 0x4343, 0x6c6f, 0x726f, 
+0x7542, 0x7474, 0x6e6f, 0x455f, 0x616e, 0x6c62, 0x4165, 0x7475, 0x6d6f, 
+0x7461, 0x6369, 0x7542, 0x7474, 0x6e6f, 0x3c3e, 0x464d, 0x4343, 0x6c6f, 
+0x726f, 0x7542, 0x7474, 0x6e6f, 0x435f, 0x6c6f, 0x6d75, 0x736e, 0x6f43, 
+0x6e75, 0x3e74, 0x3c35, 0x4d2f, 0x4346, 0x6f43, 0x6f6c, 0x4272, 0x7475, 
+0x6f74, 0x5f6e, 0x6f43, 0x756c, 0x6e6d, 0x4373, 0x756f, 0x746e, "\076" 
+    0
+END
+
+IDD_TAB_MARKER_1 DLGINIT
+BEGIN
+    IDC_MFCCOLORBUTTON_MARKER_STROKE, 0x37c, 215, 0
+0x4d3c, 0x4346, 0x6f43, 0x6f6c, 0x4272, 0x7475, 0x6f74, 0x5f6e, 0x6e45, 
+0x6261, 0x656c, 0x744f, 0x6568, 0x4272, 0x7475, 0x6f74, 0x3e6e, 0x5254, 
+0x4555, 0x2f3c, 0x464d, 0x4343, 0x6c6f, 0x726f, 0x7542, 0x7474, 0x6e6f, 
+0x455f, 0x616e, 0x6c62, 0x4f65, 0x6874, 0x7265, 0x7542, 0x7474, 0x6e6f, 
+0x3c3e, 0x464d, 0x4343, 0x6c6f, 0x726f, 0x7542, 0x7474, 0x6e6f, 0x455f, 
+0x616e, 0x6c62, 0x4165, 0x7475, 0x6d6f, 0x7461, 0x6369, 0x7542, 0x7474, 
+0x6e6f, 0x463e, 0x4c41, 0x4553, 0x2f3c, 0x464d, 0x4343, 0x6c6f, 0x726f, 
+0x7542, 0x7474, 0x6e6f, 0x455f, 0x616e, 0x6c62, 0x4165, 0x7475, 0x6d6f, 
+0x7461, 0x6369, 0x7542, 0x7474, 0x6e6f, 0x3c3e, 0x464d, 0x4343, 0x6c6f, 
+0x726f, 0x7542, 0x7474, 0x6e6f, 0x435f, 0x6c6f, 0x6d75, 0x736e, 0x6f43, 
+0x6e75, 0x3e74, 0x3c35, 0x4d2f, 0x4346, 0x6f43, 0x6f6c, 0x4272, 0x7475, 
+0x6f74, 0x5f6e, 0x6f43, 0x756c, 0x6e6d, 0x4373, 0x756f, 0x746e, "\076" 
+    IDC_MFCCOLORBUTTON_MARKER_FILL, 0x37c, 215, 0
+0x4d3c, 0x4346, 0x6f43, 0x6f6c, 0x4272, 0x7475, 0x6f74, 0x5f6e, 0x6e45, 
+0x6261, 0x656c, 0x744f, 0x6568, 0x4272, 0x7475, 0x6f74, 0x3e6e, 0x5254, 
+0x4555, 0x2f3c, 0x464d, 0x4343, 0x6c6f, 0x726f, 0x7542, 0x7474, 0x6e6f, 
+0x455f, 0x616e, 0x6c62, 0x4f65, 0x6874, 0x7265, 0x7542, 0x7474, 0x6e6f, 
+0x3c3e, 0x464d, 0x4343, 0x6c6f, 0x726f, 0x7542, 0x7474, 0x6e6f, 0x455f, 
+0x616e, 0x6c62, 0x4165, 0x7475, 0x6d6f, 0x7461, 0x6369, 0x7542, 0x7474, 
+0x6e6f, 0x463e, 0x4c41, 0x4553, 0x2f3c, 0x464d, 0x4343, 0x6c6f, 0x726f, 
+0x7542, 0x7474, 0x6e6f, 0x455f, 0x616e, 0x6c62, 0x4165, 0x7475, 0x6d6f, 
+0x7461, 0x6369, 0x7542, 0x7474, 0x6e6f, 0x3c3e, 0x464d, 0x4343, 0x6c6f, 
+0x726f, 0x7542, 0x7474, 0x6e6f, 0x435f, 0x6c6f, 0x6d75, 0x736e, 0x6f43, 
+0x6e75, 0x3e74, 0x3c35, 0x4d2f, 0x4346, 0x6f43, 0x6f6c, 0x4272, 0x7475, 
+0x6f74, 0x5f6e, 0x6f43, 0x756c, 0x6e6d, 0x4373, 0x756f, 0x746e, "\076" 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE
+BEGIN
+    IDP_OLE_INIT_FAILED     "OLE initialization failed.  Make sure that the OLE libraries are the correct version."
+    IDS_MAIN_TOOLBAR        "Standard"
+    IDS_WINDOWS_MANAGER     "&Windows..."
+END
+
+STRINGTABLE
+BEGIN
+    IDR_MAINFRAME           "SymbolizerProject"
+    IDR_SymbolizerProjectTYPE 
+                            "\nSymbolizerProject\nSymbolizerProje\n\n\nSymbolizerProject.Document\nSymbolizerProject.Document"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_STATUS_PANE1        "Pane 1"
+    IDS_STATUS_PANE2        "Pane 2"
+    IDS_TOOLBAR_STANDARD    "Standard"
+    IDS_TOOLBAR_CUSTOMIZE   "Customize..."
+END
+
+STRINGTABLE
+BEGIN
+    AFX_IDS_APP_TITLE       "SymbolizerProject"
+    AFX_IDS_IDLEMESSAGE     "Ready"
+END
+
+STRINGTABLE
+BEGIN
+    ID_INDICATOR_EXT        "EXT"
+    ID_INDICATOR_CAPS       "CAP"
+    ID_INDICATOR_NUM        "NUM"
+    ID_INDICATOR_SCRL       "SCRL"
+    ID_INDICATOR_OVR        "OVR"
+    ID_INDICATOR_REC        "REC"
+END
+
+STRINGTABLE
+BEGIN
+    ID_FILE_NEW             "Create a new document\nNew"
+    ID_FILE_OPEN            "Open an existing document\nOpen"
+    ID_FILE_CLOSE           "Close the active document\nClose"
+    ID_FILE_SAVE            "Save the active document\nSave"
+    ID_FILE_SAVE_AS         "Save the active document with a new name\nSave As"
+    ID_FILE_PAGE_SETUP      "Change the printing options\nPage Setup"
+    ID_FILE_PRINT_SETUP     "Change the printer and printing options\nPrint Setup"
+    ID_FILE_PRINT           "Print the active document\nPrint"
+    ID_FILE_PRINT_DIRECT    "Send the document directly to the default printer without making changes\nQuick Print"
+    ID_FILE_PRINT_PREVIEW   "Display full pages\nPrint Preview"
+END
+
+STRINGTABLE
+BEGIN
+    ID_APP_ABOUT            "Display program information, version number and copyright\nAbout"
+    ID_APP_EXIT             "Quit the application; prompts to save documents\nExit"
+END
+
+STRINGTABLE
+BEGIN
+    ID_FILE_MRU_FILE1       "Open this document"
+    ID_FILE_MRU_FILE2       "Open this document"
+    ID_FILE_MRU_FILE3       "Open this document"
+    ID_FILE_MRU_FILE4       "Open this document"
+    ID_FILE_MRU_FILE5       "Open this document"
+    ID_FILE_MRU_FILE6       "Open this document"
+    ID_FILE_MRU_FILE7       "Open this document"
+    ID_FILE_MRU_FILE8       "Open this document"
+    ID_FILE_MRU_FILE9       "Open this document"
+    ID_FILE_MRU_FILE10      "Open this document"
+    ID_FILE_MRU_FILE11      "Open this document"
+    ID_FILE_MRU_FILE12      "Open this document"
+    ID_FILE_MRU_FILE13      "Open this document"
+    ID_FILE_MRU_FILE14      "Open this document"
+    ID_FILE_MRU_FILE15      "Open this document"
+    ID_FILE_MRU_FILE16      "Open this document"
+END
+
+STRINGTABLE
+BEGIN
+    ID_NEXT_PANE            "Switch to the next window pane\nNext Pane"
+    ID_PREV_PANE            "Switch back to the previous window pane\nPrevious Pane"
+END
+
+STRINGTABLE
+BEGIN
+    ID_WINDOW_MANAGER       "Manages the currently opened window\nWindow List"
+    ID_VIEW_PROPERTIES      "Show or hide the property grid\nToggle Property Grid"
+END
+
+STRINGTABLE
+BEGIN
+    ID_WINDOW_NEW           "Open another window for the active document\nNew Window"
+    ID_WINDOW_SPLIT         "Split the active window into panes\nSplit"
+END
+
+STRINGTABLE
+BEGIN
+    ID_EDIT_CLEAR           "Erase the selection\nErase"
+    ID_EDIT_CLEAR_ALL       "Erase everything\nErase All"
+    ID_EDIT_COPY            "Copy the selection and put it on the Clipboard\nCopy"
+    ID_EDIT_CUT             "Cut the selection and put it on the Clipboard\nCut"
+    ID_EDIT_FIND            "Find the specified text\nFind"
+    ID_EDIT_PASTE           "Insert Clipboard contents\nPaste"
+    ID_EDIT_REPEAT          "Repeat the last action\nRepeat"
+    ID_EDIT_REPLACE         "Replace specific text with different text\nReplace"
+    ID_EDIT_SELECT_ALL      "Select the entire document\nSelect All"
+    ID_EDIT_UNDO            "Undo the last action\nUndo"
+    ID_EDIT_REDO            "Redo the previously undone action\nRedo"
+END
+
+STRINGTABLE
+BEGIN
+    ID_VIEW_TOOLBAR         "Show or hide the toolbar\nToggle ToolBar"
+    ID_VIEW_STATUS_BAR      "Show or hide the status bar\nToggle StatusBar"
+END
+
+STRINGTABLE
+BEGIN
+    AFX_IDS_SCSIZE          "Change the window size"
+    AFX_IDS_SCMOVE          "Change the window position"
+    AFX_IDS_SCMINIMIZE      "Reduce the window to an icon"
+    AFX_IDS_SCMAXIMIZE      "Enlarge the window to full size"
+    AFX_IDS_SCNEXTWINDOW    "Switch to the next document window"
+    AFX_IDS_SCPREVWINDOW    "Switch to the previous document window"
+    AFX_IDS_SCCLOSE         "Close the active window and prompts to save the documents"
+END
+
+STRINGTABLE
+BEGIN
+    AFX_IDS_SCRESTORE       "Restore the window to normal size"
+    AFX_IDS_SCTASKLIST      "Activate Task List"
+    AFX_IDS_MDICHILD        "Activate this window"
+END
+
+STRINGTABLE
+BEGIN
+    AFX_IDS_PREVIEW_CLOSE   "Close print preview mode\nCancel Preview"
+END
+
+STRINGTABLE
+BEGIN
+    ID_VIEW_CUSTOMIZE       "Customize toolbars and menus.\nCustomize"
+END
+
+STRINGTABLE
+BEGIN
+    ID_VIEW_WORKSPACE       "Show or hide the workspace bar\nToggle Workspace"
+    ID_VIEW_WORKSPACE2      "Show or hide the second workspace bar\nToggle Second Workspace"
+    ID_VIEW_USER_TOOLBAR1   "Show or hide the user toolbar\nToggle User ToolBar"
+    ID_VIEW_USER_TOOLBAR2   "Show or hide the user toolbar\nToggle User ToolBar"
+    ID_VIEW_USER_TOOLBAR3   "Show or hide the user toolbar\nToggle User ToolBar"
+    ID_VIEW_USER_TOOLBAR4   "Show or hide the user toolbar\nToggle User ToolBar"
+    ID_VIEW_USER_TOOLBAR5   "Show or hide the user toolbar\nToggle User ToolBar"
+    ID_VIEW_USER_TOOLBAR6   "Show or hide the user toolbar\nToggle User ToolBar"
+    ID_VIEW_USER_TOOLBAR7   "Show or hide the user toolbar\nToggle User ToolBar"
+END
+
+STRINGTABLE
+BEGIN
+    ID_VIEW_USER_TOOLBAR8   "Show or hide the user toolbar\nToggle User ToolBar"
+    ID_VIEW_USER_TOOLBAR9   "Show or hide the user toolbar\nToggle User ToolBar"
+    ID_VIEW_USER_TOOLBAR10  "Show or hide the user toolbar\nToggle User ToolBar"
+    ID_VIEW_OUTPUT          "Show or hide the output bar\nToggle Output"
+END
+
+STRINGTABLE
+BEGIN
+    ID_TOOLBOX              "Show or hide the toolbox\nToggle Toolbox"
+END
+
+#endif    // English (United States) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#include "RES\SymbolizerProject.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"      // Standard components
+#include "afxprint.rc"    // printing/print preview resources
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

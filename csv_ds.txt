@@ -1,0 +1,3 @@
+<Datasource>
+    <Parameter name="type"><![CDATA[csv]]></Parameter>
+</Datasource>

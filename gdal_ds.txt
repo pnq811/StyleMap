@@ -1,0 +1,4 @@
+<Datasource>
+    <Parameter name="type"><![CDATA[gdal]]></Parameter>
+    <Parameter name="nodata-tolerance"><![CDATA[0.000000]]></Parameter>
+</Datasource>

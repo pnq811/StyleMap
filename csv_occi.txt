@@ -1,0 +1,4 @@
+<Datasource>
+    <Parameter name="type"><![CDATA[occi]]></Parameter>
+    <Parameter name="encoding"><![CDATA[utf-999]]></Parameter>
+</Datasource>
